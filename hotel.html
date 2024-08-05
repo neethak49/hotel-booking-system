@@ -1,0 +1,154 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color:lightblue;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color:lightcoral;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('hotel.jpg');
+            background-size: cover;
+            background-color: lightsteelblue;
+            background-position: center;
+            height:100px;
+            color:light;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .room {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .room img {
+            max-width: 100%;
+        }
+        .room h2 {
+            margin: 0;
+        }
+        .booking-form {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .booking-form button {
+            background-color: #333;
+            color:lightgoldenrodyellow;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color:lightpink;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking System</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Our Hotel</h1>
+    </div>
+    <div class="container">
+        <section id="rooms">
+            <h2>Available Rooms</h2>
+            <div class="room">
+                <img src="C:\Users\Dell\Desktop\download (2).jpeg" alt="Room 1">
+                <h2>Deluxe Room</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                <p><strong>Price:</strong> ₹20000 per night</p>
+            </div>
+            <div class="room">
+                <img src="C:\Users\Dell\Desktop\download (3).jpeg" alt="Room 2">
+                <h2>Standard Room</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+                <p><strong>Price:</strong> ₹15000 per night</p>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2>Book Your Stay</h2>
+            <form class="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="room">Room Type:</label>
+                <select id="room" name="room">
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="standard">Standard Room</option>
+                </select>
+
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking System. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
